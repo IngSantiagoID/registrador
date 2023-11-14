@@ -1,0 +1,178 @@
+/*
+*Colors scheme
+*/
+/* color scheme light */
+$primary-light: #215abd;
+$on-primary-light: #ffffff;
+$primary-container-light: #d9e2ff;
+$on-primary-container-light: #001945;
+$secondary-light: #0d61a4;
+$on-secondary-light: #ffffff;
+$secondary-container-light: #d2e4ff;
+$on-secondary-container-light: #001c37;
+$tertiary-light: #835500;
+$on-tertiary-light: #ffffff;
+$tertiary-container-light: #ffddb5;
+$on-tertiary-container-light: #2a1800;
+$error-light: #ba1a1a;
+$error-container-light: #ffdad6;
+$on-error-light: #ffffff;
+$on-error-container-light: #410002;
+$background-light: #f8fdff;
+$on-background-light: #001f25;
+$surface-light: #f8fdff;
+$on-surface-light: #001f25;
+$surface-variant-light: #e1e2ec;
+$on-surface-variant-light: #44464f;
+$outline-light: #757780;
+$inverse-on-surface-light: #d6f6ff;
+$inverse-surface-light: #00363f;
+$inverse-primary-light: #b0c6ff;
+$shadow-light: #000000;
+$surface-tint-light: #215abd;
+$outline-variant-light: #c5c6d0;
+$scrim-light: #000000;
+/** color scheme dark **/
+$primary-dark: #b0c6ff;
+$on-primary-dark: #002d6e;
+$primary-container-dark: #00429b;
+$on-primary-container-dark: #d9e2ff;
+$secondary-dark: #a0c9ff;
+$on-secondary-dark: #00325a;
+$secondary-container-dark: #00497f;
+$on-secondary-container-dark: #d2e4ff;
+$tertiary-dark: #ffb955;
+$on-tertiary-dark: #452b00;
+$tertiary-container-dark: #633f00;
+$on-tertiary-container-dark: #ffddb5;
+$error-dark: #ffb4ab;
+$error-container-dark: #93000a;
+$on-error-dark: #690005;
+$on-error-container-dark: #ffdad6;
+$background-dark: #001f25;
+$on-background-dark: #a6eeff;
+$surface-dark: #001f25;
+$on-surface-dark: #a6eeff;
+$surface-variant-dark: #44464f;
+$on-surface-variant-dark: #c5c6d0;
+$outline-dark: #8f9099;
+$inverse-on-surface-dark: #001f25;
+$inverse-surface-dark: #a6eeff;
+$inverse-primary-dark: #215abd;
+$shadow-dark: #000000;
+$surface-tint-dark: #b0c6ff;
+$outline-variant-dark: #44464f;
+$scrim-dark: #000000;
+/*
+*Fonts typescale Arrays
+*/
+@import url("https://fonts.googleapis.com/css2?family=Pavanam&family=Rambla:wght@700&family=Scada&display=swap");
+$font-text: "Pavanam", sans-serif;
+$font-headline: "Rambla", sans-serif;
+$font-tile: "Scada", sans-serif;
+
+/* display - large */
+$display-large-font-family-name: $font-text;
+$display-large-font-family-style: Regular;
+$display-large-font-weight: 900;
+$display-large-font-size: 57px;
+$display-large-line-height: 64px;
+$display-large-letter-spacing: -0.25px;
+/* display - medium */
+$display-medium-font-family-name: $font-text;
+$display-medium-font-family-style: Medium;
+$display-medium-font-weight: 900;
+$display-medium-font-size: 45px;
+$display-medium-line-height: 52px;
+$display-medium-letter-spacing: 0px;
+/* display - small */
+$display-small-font-family-name: $font-text;
+$display-small-font-family-style: Medium;
+$display-small-font-weight: 900;
+$display-small-font-size: 36px;
+$display-small-line-height: 44px;
+$display-small-letter-spacing: 0px;
+/* headline - large */
+$headline-large-font-family-name: $font-headline;
+$headline-large-font-family-style: Regular;
+$headline-large-font-weight: 600;
+$headline-large-font-size: 32px;
+$headline-large-line-height: 40px;
+$headline-large-letter-spacing: 0px;
+/* headline - medium */
+$headline-medium-font-family-name: $font-headline;
+$headline-medium-font-family-style: Medium;
+$headline-medium-font-weight: 600;
+$headline-medium-font-size: 28px;
+$headline-medium-line-height: 36px;
+$headline-medium-letter-spacing: 0px;
+/* headline - small */
+$headline-small-font-family-name: $font-headline;
+$headline-small-font-family-style: Medium;
+$headline-small-font-weight: 600;
+$headline-small-font-size: 24px;
+$headline-small-line-height: 32px;
+$headline-small-letter-spacing: 0px;
+/* body - large */
+$body-large-font-family-name: $font-text;
+$body-large-font-family-style: Regular;
+$body-large-font-weight: 400;
+$body-large-font-size: 16px;
+$body-large-line-height: 24px;
+$body-large-letter-spacing: 0.5px;
+/* body - medium */
+$body-medium-font-family-name: $font-text;
+$body-medium-font-family-style: Medium;
+$body-medium-font-weight: 400;
+$body-medium-font-size: 14px;
+$body-medium-line-height: 20px;
+$body-medium-letter-spacing: 0.25px;
+/* body - small */
+$body-small-font-family-name: $font-text;
+$body-small-font-family-style: Medium;
+$body-small-font-weight: 400;
+$body-small-font-size: 12px;
+$body-small-line-height: 16px;
+$body-small-letter-spacing: 0.4px;
+/* label - large */
+$label-large-font-family-name: $font-text;
+$label-large-font-family-style: Medium;
+$label-large-font-weight: 500;
+$label-large-font-size: 14px;
+$label-large-line-height: 20px;
+$label-large-letter-spacing: 0.1px;
+/* label - medium */
+$label-medium-font-family-name: $font-text;
+$label-medium-font-family-style: Medium;
+$label-medium-font-weight: 500;
+$label-medium-font-size: 12px;
+$label-medium-line-height: 16px;
+$label-medium-letter-spacing: 0.5px;
+/* label - small */
+$label-small-font-family-name: $font-text;
+$label-small-font-family-style: Medium;
+$label-small-font-weight: 500;
+$label-small-font-size: 11px;
+$label-small-line-height: 16px;
+$label-small-letter-spacing: 0.5px;
+/* title - large */
+$title-large-font-family-name: $font-tile;
+$title-large-font-family-style: Regular;
+$title-large-font-weight: 400;
+$title-large-font-size: 22px;
+$title-large-line-height: 28px;
+$title-large-letter-spacing: 0px;
+/* title - medium */
+$title-medium-font-family-name: $font-tile;
+$title-medium-font-family-style: Medium;
+$title-medium-font-weight: 500;
+$title-medium-font-size: 16px;
+$title-medium-line-height: 24px;
+$title-medium-letter-spacing: 0.15px;
+/* title - small */
+$title-small-font-family-name: $font-tile;
+$title-small-font-family-style: Medium;
+$title-small-font-weight: 500;
+$title-small-font-size: 14px;
+$title-small-line-height: 20px;
+$title-small-letter-spacing: 0.1px;

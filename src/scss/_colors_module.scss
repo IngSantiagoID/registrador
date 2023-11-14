@@ -1,0 +1,300 @@
+.tg-primary {
+  @include themed() {
+    background-color: scheme($tg-primary);
+  }
+}
+.tg-primary-text {
+  @include themed() {
+    color: scheme($tg-primary);
+  }
+}
+.tg-on-primary {
+  @include themed() {
+    background-color: scheme($tg-on-primary);
+  }
+}
+.tg-on-primary-text {
+  @include themed() {
+    color: scheme($tg-on-primary);
+  }
+}
+.tg-primary-container {
+  @include themed() {
+    background-color: scheme($tg-primary-container);
+  }
+}
+.tg-primary-container-text {
+  @include themed() {
+    color: scheme($tg-primary-container);
+  }
+}
+.tg-on-primary-container {
+  @include themed() {
+    background-color: scheme($tg-on-primary-container);
+  }
+}
+.tg-on-primary-container-text {
+  @include themed() {
+    color: scheme($tg-on-primary-container);
+  }
+}
+.tg-secondary {
+  @include themed() {
+    background-color: scheme($tg-secondary);
+  }
+}
+.tg-secondary-text {
+  @include themed() {
+    color: scheme($tg-secondary);
+  }
+}
+.tg-on-secondary {
+  @include themed() {
+    background-color: scheme($tg-on-secondary);
+  }
+}
+.tg-on-secondary-text {
+  @include themed() {
+    color: scheme($tg-on-secondary);
+  }
+}
+.tg-secondary-container {
+  @include themed() {
+    background-color: scheme($tg-secondary-container);
+  }
+}
+.tg-secondary-container-text {
+  @include themed() {
+    color: scheme($tg-secondary-container);
+  }
+}
+.tg-on-secondary-container {
+  @include themed() {
+    background-color: scheme($tg-on-secondary-container);
+  }
+}
+.tg-on-secondary-container-text {
+  @include themed() {
+    color: scheme($tg-on-secondary-container);
+  }
+}
+.tg-tertiary {
+  @include themed() {
+    background-color: scheme($tg-tertiary);
+  }
+}
+.tg-tertiary-text {
+  @include themed() {
+    color: scheme($tg-tertiary);
+  }
+}
+.tg-on-tertiary {
+  @include themed() {
+    background-color: scheme($tg-on-tertiary);
+  }
+}
+.tg-on-tertiary-text {
+  @include themed() {
+    color: scheme($tg-on-tertiary);
+  }
+}
+.tg-tertiary-container {
+  @include themed() {
+    background-color: scheme($tg-tertiary-container);
+  }
+}
+.tg-tertiary-container-text {
+  @include themed() {
+    color: scheme($tg-tertiary-container);
+  }
+}
+.tg-on-tertiary-container {
+  @include themed() {
+    background-color: scheme($tg-on-tertiary-container);
+  }
+}
+.tg-on-tertiary-container-text {
+  @include themed() {
+    color: scheme($tg-on-tertiary-container);
+  }
+}
+.tg-error {
+  @include themed() {
+    background-color: scheme($tg-error);
+  }
+}
+.tg-error-text {
+  @include themed() {
+    color: scheme($tg-error);
+  }
+}
+.tg-error-container {
+  @include themed() {
+    background-color: scheme($tg-error-container);
+  }
+}
+.tg-error-container-text {
+  @include themed() {
+    color: scheme($tg-error-container);
+  }
+}
+.tg-on-error {
+  @include themed() {
+    background-color: scheme($tg-on-error);
+  }
+}
+.tg-on-error-text {
+  @include themed() {
+    color: scheme($tg-on-error);
+  }
+}
+.tg-on-error-container {
+  @include themed() {
+    background-color: scheme($tg-on-error-container);
+  }
+}
+.tg-on-error-container-text {
+  @include themed() {
+    color: scheme($tg-on-error-container);
+  }
+}
+.tg-background {
+  @include themed() {
+    background-color: scheme($tg-background);
+  }
+}
+.tg-background-text {
+  @include themed() {
+    color: scheme($tg-background);
+  }
+}
+.tg-on-background {
+  @include themed() {
+    background-color: scheme($tg-on-background);
+  }
+}
+.tg-on-background-text {
+  @include themed() {
+    color: scheme($tg-on-background);
+  }
+}
+.tg-surface {
+  @include themed() {
+    background-color: scheme($tg-surface);
+  }
+}
+.tg-surface-text {
+  @include themed() {
+    color: scheme($tg-surface);
+  }
+}
+.tg-on-surface {
+  @include themed() {
+    background-color: scheme($tg-on-surface);
+  }
+}
+.tg-on-surface-text {
+  @include themed() {
+    color: scheme($tg-on-surface);
+  }
+}
+.tg-surface-schemeiant {
+  @include themed() {
+    background-color: scheme($tg-surface-variant);
+  }
+}
+.tg-surface-variant-text {
+  @include themed() {
+    color: scheme($tg-surface-variant);
+  }
+}
+.tg-on-surface-variant {
+  @include themed() {
+    background-color: scheme($tg-on-surface-variant);
+  }
+}
+.tg-on-surface-variant-text {
+  @include themed() {
+    color: scheme($tg-on-surface-variant);
+  }
+}
+.tg-outline {
+  @include themed() {
+    background-color: scheme($tg-outline);
+  }
+}
+.tg-outline-text {
+  @include themed() {
+    color: scheme($tg-outline);
+  }
+}
+.tg-inverse-on-surface {
+  @include themed() {
+    background-color: scheme($tg-inverse-on-surface);
+  }
+}
+.tg-inverse-on-surface-text {
+  @include themed() {
+    color: scheme($tg-inverse-on-surface);
+  }
+}
+.tg-inverse-surface {
+  @include themed() {
+    background-color: scheme($tg-inverse-surface);
+  }
+}
+.tg-inverse-surface-text {
+  @include themed() {
+    color: scheme($tg-inverse-surface);
+  }
+}
+.tg-inverse-primary {
+  @include themed() {
+    background-color: scheme($tg-inverse-primary);
+  }
+}
+.tg-inverse-primary-text {
+  @include themed() {
+    color: scheme($tg-inverse-primary);
+  }
+}
+.tg-shadow {
+  @include themed() {
+    background-color: scheme($tg-shadow);
+  }
+}
+.tg-shadow-text {
+  @include themed() {
+    color: scheme($tg-shadow);
+  }
+}
+.tg-surface-tint {
+  @include themed() {
+    background-color: scheme($tg-surface-tint);
+  }
+}
+.tg-surface-tint-text {
+  @include themed() {
+    color: scheme($tg-surface-tint);
+  }
+}
+.tg-outline-schemeiant {
+  @include themed() {
+    background-color: scheme($tg-outline-variant);
+  }
+}
+.tg-outline-variant-text {
+  @include themed() {
+    color: scheme($tg-outline-variant);
+  }
+}
+.tg-scrim {
+  @include themed() {
+    background-color: scheme($tg-scrim);
+  }
+}
+.tg-scrim-text {
+  @include themed() {
+    color: scheme($tg-scrim);
+  }
+}

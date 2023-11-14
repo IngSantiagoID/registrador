@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registrador AC/DC</title>
+    <script
+    src="https://kit.fontawesome.com/4466f858b8.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div class="main-app tg-th--light flex-c-c-s">
+      <header class="header tg-primary">
+        <div class="app-bar default">
+          <nav class="navbar">
+            <div class="container-fluid flex-r-b-c">
+              <a class="navbar-brand" href="#"><img src="https://www.inadisa.com/img/inadisa-logo-1602879955.jpg" alt="Inadisa Logo"></a>
+              <div class="center-menu">
+                <ul class="navbar-nav me-auto flex-r-b-c">
+                  <li class="nav-item">
+                    <button type="button" class="btn nav-link tg-on-primary-text upload-req-button" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                        <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link tg-on-primary-text" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cloud-download" viewBox="0 0 16 16">
+                        <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                        <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link tg-on-primary-text" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
+                        <path d="M16 4.5a4.492 4.492 0 0 1-1.703 3.526L13 5l2.959-1.11c.027.2.041.403.041.61Z"/>
+                        <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.49 4.49 0 0 0 11.5 9Zm-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376ZM3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="content-main">
+          <!-- Modal -->
+        <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Subir archivo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="body-wrapper flex-c-c-c modal-loader">
+                  <h3 class="loader-text">Cargando información</h3>
+                  <div class="spinners-container">
+                    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                      <div class="spinner-grow text-info" style="width: 1.5rem; height: 1.5rem;" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="body-wrapper flex-c-a-c modal-drop-area">
+                  <div class="upper-icon-content">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#215ABD" class="bi bi-file-earmark-spreadsheet" viewBox="0 0 16 16">
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="middle-text-container">
+                    <p class="mb-0">Arrastra hasta aqui el archivo que desees cargar.</p>
+                    <span>
+                      <p>O</p>
+                      <button class="btn btn-warning btn-upload-custom-file">Selecciona</button>
+                      <input type="file" class="file-input" hidden />
+                      <p>desde tu dispositivo</p>
+                    </span>
+                    <span class="hidden-alert-text"></span>
+                  </div>
+                  <div class="bottom-sugg-text-container">
+                    <p>Solo acepta archivos CSV, maximo de 5MB</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary btn-load-file">Cargar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="wrapper flex-c-c-s">
+              <div class="upper section-content">
+                <h3 class="title-section">Desempeño</h3>
+                <ul class="list-section-group flex-r-s-c">
+                  <li class="item-section-group prfrmnc-group">
+                    <h5 class="status-title">Rendimiento</h5>
+                    <div class="list-icons-status   flex-r-s-s">
+                    </div>
+                  </li>
+                  <li class="item-section-group stts-group">
+                    <h5 class="status-title">Estado</h5>
+                    <div class="list-icons-status flex-r-s-s">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="middle section-content">
+                <h3 class="title-section">Estádisticas</h3>
+                <ul class="list-section-group flex-r-s-c">
+                  <li class="item-section-group stdstcs-group">
+                    <h5 class="status-title">Estadisticas</h5>
+
+                  </li>
+                </ul>
+              </div>
+              <div class="middle section-content">
+                <h3 class="title-section">Historico</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="graph-voltage-tab" data-bs-toggle="tab" data-bs-target="#graph-voltage-tab-pane" type="button" role="tab" aria-controls="graph-voltage-tab-pane" aria-selected="true">Tensión</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="graph-current-tab" data-bs-toggle="tab" data-bs-target="#graph-current-tab-pane" type="button" role="tab" aria-controls="graph-current-tab-pane" aria-selected="false">Corriente</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="graph-power-tab" data-bs-toggle="tab" data-bs-target="#graph-power-tab-pane" type="button" role="tab" aria-controls="graph-power-tab-pane" aria-selected="false">Potencia</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="graph-temperature-tab" data-bs-toggle="tab" data-bs-target="#graph-temperature-tab-pane" type="button" role="tab" aria-controls="graph-temperature-tab-pane" aria-selected="false">Temperatura</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="graph-alarms-tab" data-bs-toggle="tab" data-bs-target="#graph-alarms-tab-pane" type="button" role="tab" aria-controls="graph-alarms-tab-pane" aria-selected="false">Alarmas</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="graph-voltage-tab-pane" role="tabpanel" aria-labelledby="graph-voltage-tab" tabindex="0">
+                    <div class="graph-content">
+                      <div class="chart ct-v-chart"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="graph-current-tab-pane" role="tabpanel" aria-labelledby="graph-current-tab" tabindex="0">
+                    <div class="graph-content">
+                      <div class="chart ct-c-chart"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="graph-power-tab-pane" role="tabpanel" aria-labelledby="graph-power-tab" tabindex="0">
+                    <div class="graph-content">
+                      <div class="chart ct-p-chart"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="graph-temperature-tab-pane" role="tabpanel" aria-labelledby="graph-temperature-tab" tabindex="0">
+                    <div class="graph-content">
+                      <div class="chart ct-t-chart"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="graph-alarms-tab-pane" role="tabpanel" aria-labelledby="graph-alarms-tab" tabindex="0">
+                    <div class="graph-content">
+                      <div class="chart ct-a-chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom section-content">
+                <h3 class="title-section">Adquisición</h3>
+                <div class="table-data-container">
+                  <div class="wrapper-table flex-r-c-s">
+                    <ul class="list-group time-list-group">
+                      <li class="list-group-item active" aria-current="true">Fecha</li>
+                    </ul>
+                    <ul class="list-group vin-list-group">
+                      <li class="list-group-item active" aria-current="true">Tensión de entrada</li>
+                     
+                    </ul>
+                    <ul class="list-group cin-list-group ">
+                      <li class="list-group-item active" aria-current="true">Corriente de entrada</li>
+                      
+                    </ul>
+                    <ul class="list-group pout-list-group">
+                      <li class="list-group-item active" aria-current="true">Potencia de entrada</li>
+                     
+                    </ul>
+                    <ul class="list-group vout-list-group">
+                      <li class="list-group-item active" aria-current="true">Tensión de salida</li>
+                     
+                    </ul>
+                    <ul class="list-group cout-list-group">
+                      <li class="list-group-item active" aria-current="true">Corriente de salida</li>
+                      
+                    </ul>
+                    <ul class="list-group pin-list-group ">
+                      <li class="list-group-item active" aria-current="true">Potencia de salida</li>
+                      
+                    </ul>
+                    <ul class="list-group tempa-list-group">
+                      <li class="list-group-item active" aria-current="true">Temperatura Ambiente</li>
+                     
+                    </ul>
+                    <ul class="list-group tempc-list-group">
+                      <li class="list-group-item active" aria-current="true">Temperatura Critica</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+  </body>
+</html>

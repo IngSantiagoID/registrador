@@ -1,0 +1,122 @@
+//shortcuts
+
+$tg-primary: primary;
+$tg-on-primary: on-primary;
+$tg-primary-container: primary-container;
+$tg-on-primary-container: on-primary-container;
+$tg-secondary: secondary;
+$tg-on-secondary: on-secondary;
+$tg-secondary-container: secondary-container;
+$tg-on-secondary-container: on-secondary-container;
+$tg-tertiary: tertiary;
+$tg-on-tertiary: on-tertiary;
+$tg-tertiary-container: tertiary-container;
+$tg-on-tertiary-container: on-tertiary-container;
+$tg-error: error;
+$tg-error-container: error-contianer;
+$tg-on-error: on-error;
+$tg-on-error-container: on-error-contianer;
+$tg-background: background;
+$tg-on-background: on-background;
+$tg-surface: surface;
+$tg-on-surface: on-surface;
+$tg-surface-variant: surface-variant;
+$tg-on-surface-variant: on-surface-variant;
+$tg-outline: outline;
+$tg-inverse-on-surface: inverse-on-surface;
+$tg-inverse-surface: inverse-surface;
+$tg-inverse-primary: inverse-primary;
+$tg-shadow: shadow;
+$tg-surface-tint: surface-tint;
+$tg-outline-variant: outline-variant;
+$tg-scrim: scrim;
+
+$themes: (
+  light: (
+    primary: $primary-light,
+    on-primary: $on-primary-light,
+    primary-container: $primary-container-light,
+    on-primary-container: $on-primary-container-light,
+    secondary: $secondary-light,
+    on-secondary: $on-secondary-light,
+    secondary-container: $secondary-container-light,
+    on-secondary-container: $on-secondary-container-light,
+    tertiary: $tertiary-light,
+    on-tertiary: $on-tertiary-light,
+    tertiary-container: $tertiary-container-light,
+    on-tertiary-contianer: $on-tertiary-container-light,
+    error: $error-light,
+    error-container: $error-container-light,
+    on-error: $on-error-light,
+    on-error-container: $on-error-container-light,
+    background: $background-light,
+    on-background: $on-background-light,
+    surface: $surface-light,
+    on-surface: $on-surface-light,
+    surface-variant: $surface-variant-light,
+    on-surface-variant: $on-surface-variant-light,
+    outline: $outline-light,
+    inverse-on-surface: $inverse-on-surface-light,
+    invers-surface: $inverse-surface-light,
+    inverse-primary: $inverse-primary-light,
+    shadow: $shadow-light,
+    surface-tint: $surface-tint-light,
+    outline-variant: $outline-variant-light,
+    scrim: $scrim-light,
+  ),
+  dark: (
+    primary: $primary-dark,
+    on-primary: $on-primary-dark,
+    primary-container: $primary-container-dark,
+    on-primary-container: $on-primary-container-dark,
+    secondary: $secondary-dark,
+    on-secondary: $on-secondary-dark,
+    secondary-container: $secondary-container-dark,
+    on-secondary-container: $on-secondary-container-dark,
+    tertiary: $tertiary-dark,
+    on-tertiary: $on-tertiary-dark,
+    tertiary-container: $tertiary-container-dark,
+    on-tertiary-contianer: $on-tertiary-container-dark,
+    error: $error-dark,
+    error-container: $error-container-dark,
+    on-error: $on-error-dark,
+    on-error-container: $on-error-container-dark,
+    background: $background-dark,
+    on-background: $on-background-dark,
+    surface: $surface-dark,
+    on-surface: $on-surface-dark,
+    surface-variant: $surface-variant-dark,
+    on-surface-variant: $on-surface-variant-dark,
+    outline: $outline-dark,
+    inverse-on-surface: $inverse-on-surface-dark,
+    invers-surface: $inverse-surface-dark,
+    inverse-primary: $inverse-primary-dark,
+    shadow: $shadow-dark,
+    surface-tint: $surface-tint-dark,
+    outline-variant: $outline-variant-dark,
+    scrim: $scrim-dark,
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .tg-th--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function scheme($key) {
+  @return map-get($theme-map, $key);
+}

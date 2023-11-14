@@ -1,0 +1,94 @@
+@import "app.scss";
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+body{
+    
+    .app-main{
+        background-color: #DABFFF;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem 2rem;
+        @include breakpoint-down(medium) {
+            padding: 2rem 0.1rem;
+        }
+    }
+    .sweet-title {
+        transform: skew(0, -10deg);
+        order: 2;
+        color: #fde9ff;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 7rem;
+        line-height: 1em;
+        text-align: center;
+        text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+          3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+          6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+          6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+          9px 7px 1px #4af7ff;
+          @include breakpoint-down(medium) {
+            font-size: 5.5rem;
+            margin-left: 20px;
+        }
+      
+        span {
+          display: block;
+          position: relative;
+      
+          &:before {
+            content: attr(data-text);
+            position: absolute;
+            text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+              -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+            z-index: 1;
+          }
+      
+          &:nth-child(1) {
+            padding-right: 2.25rem;
+          }
+      
+          &:nth-child(2) {
+            padding-left: 2.25rem;
+          }
+        }
+      }
+    figure{
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+            margin: auto;
+        }
+    }
+
+    .last-name {
+        font-family: 'Calligraffitti', cursive;
+        font-weight: 700;
+        font-size: 8rem;
+        text-shadow: -15px 5px 20px #ced0d3;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #F9f1cc;
+        text-shadow: 2px 5px 0px #FFB650, 
+          4px 10px 0px #FFD662, 
+          6px 15px 0px  #FF80BF, 
+          8px 20px 0px #EF5097, 
+          10px 25px 0px #6868AC, 
+          12px 30px 0px #90B1E0;
+
+          @include breakpoint-down(medium) {
+            font-size: 6rem;
+        }
+      }
+
+      .span-link{
+        font-style: italic;
+        font-size: 12px;
+        color: gray;
+        position: absolute;
+        bottom: 2rem;
+      }
+}
